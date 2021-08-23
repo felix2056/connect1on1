@@ -1,0 +1,465 @@
+/*
+Template Name: Lamour
+Version      : 1.0
+*/
+/*===========================================================
+    CSS INDEX
+=============================================================
+
+01. Fonts
+02. @import css
+03. Reset Stylesheet
+04. css3 animation
+05. header
+06. Banner
+07. Search By Map
+08. Why Join
+09. Online Members
+10. Easy Connect
+11. Member feedback
+12. Clients Area
+13. Footer
+14. Search Girls
+15. list-grid
+16. Home2
+17. Home3
+18. Blog
+19. single-blog
+20. About-us
+21. Rain Effect
+*/
+
+.chat-box {
+  width: 280px;
+  position: fixed;
+  bottom: 0px;
+  right: 220px;
+  cursor: pointer;
+  z-index: 5;
+  display: none;
+}
+.chat-box.active {
+  bottom: 0;
+}
+.chat-box .head {
+  padding: 16px 10px 10px;
+  color: #fff;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  float: left;
+  width: 100%;
+} 
+
+.chat-box .head .o-m-n {
+  width: 50%;
+  display: inline-block;
+  font-size: 16px;
+  float: left;
+  font-weight: 400;
+}
+.chat-box .head .o-m-n.online i:before {
+  color: #70d62c;
+  font-size: 12px;
+}
+.chat-box .head .activity {
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
+.chat-box .head .activity i:before {
+  font-size: 10px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 18px;
+  border:1px solid #fff;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.chat-box .head .activity i.flaticon-cancel:before {
+  float: right;
+  border-color: transparent;
+  font-size: 16px;
+  font-weight: bold;
+}
+.chat-box .head a:hover {
+  color: #fff
+}
+.msg_footer {
+  width: 100%;
+  float: left;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  background: #f8f8f8;
+}
+.msg_footer .form-control {
+  border-radius: 0;
+  height: auto;
+  border: none;
+  background:  transparent;
+  padding: 12px 44px 12px 10px;
+}
+.msg_footer input {
+  width: 100%;
+  float: left;
+  line-height: 20px;
+  font-size: 14px;
+  padding: 8px 12px;
+  font-weight: 400;
+}
+
+.chat-txt-box {
+  width: 100%;
+  min-height: 200px;
+  background: #fff;
+  border:1px solid #e3e3e3;
+  float: left;
+  height: 320px;
+  overflow-x: auto;
+  padding: 0 0 60px;
+}
+.chat-box .popup-head-left {
+  display: inline-block;
+  float: left;
+}
+.chat-box .popup-head-right {
+  display: inline-block;
+  float: right;
+}
+
+.chat1 {
+  width: 100%;
+  float: left;
+  padding: 10px 20px 10px 65px;
+  position: relative;
+  z-index: 1;
+}
+
+.chat1 p {
+  font-size: 16px;
+  line-height: 20px;
+  background: #eeeeee;
+  display: inline-block;
+  padding: 8px 12px;
+  color: #414141;
+  border-radius: 15px;
+}
+
+.chat1 .img-holder {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  width:  35px;
+  height:  35px;
+}
+.chat2 {
+  width: 100%;
+  float: right;
+  padding: 10px 65px 10px 20px;
+  position: relative;
+}
+.chat2 p {
+  font-size: 16px;
+  line-height: 20px;
+  display: inline-block;
+  padding: 8px 12px;
+  color: #fff;
+  border-radius: 15px;
+  float: right;
+}
+.chat2 .img-holder {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 35px;
+  height: 35px;
+}
+.online-side-nav {
+  height: 100%;
+  background: #fff;
+  -webkit-box-shadow: 0 0 8px 0 rgba(000,000,000,0.2);
+  box-shadow: 0 0 8px 0 rgba(000,000,000,0.2);
+  z-index: 2;
+  overflow-y: scroll;
+  overflow: visible;
+  width: 250px;
+  position: fixed;
+  right: 0;
+  bottom: 0px;
+  height: 100%;
+  margin-right: -17px;
+}
+.online-side-nav.hide-user {
+  right: -235px;
+}
+.online-side-nav ul {
+  list-style: none;
+  float: left;
+  width: 115px;
+  height: auto;
+  display: block;
+}
+.online-side-nav ul li {
+  display: block;
+  width: 100%;
+  padding: 20px 28px;
+}
+.online-side-nav ul li a {
+  display: block;
+  position: relative;
+  border-radius: 50%;
+}
+.online-side-nav ul li a img {
+  border-radius: 50%;
+  overflow: hidden;
+  
+}
+.online-side-nav ul li a .user-info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.online-side-nav ul li a .user-info i:before {
+  color: #f05151;
+  font-size: 10px;
+}
+.online-side-nav ul li a .user-info.active i:before {
+  color: #20c032;
+}
+
+.online-side-nav::-webkit-scrollbar {
+  visibility: hidden;
+}
+.online-side-nav:hover::-webkit-scrollbar {
+  visibility: visible;
+}
+/*nano scroll css*/
+
+.online-side-nav .nav-btn {
+  position: absolute;
+  left: -50px;
+  top: 153px;
+}
+.online-side-nav .nav-btn i:before {
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  line-height: 50px;
+  font-size: 26px;
+}
+.online-side-nav.hide-user .nav-btn i:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.online-side-nav .nav-btn a:hover, .online-side-nav .nav-btn a:active, .online-side-nav .nav-btn a:focus {
+  color: #fff;
+}
+.search-form.om-m-now {
+  width: 100%;
+  float: left;
+  background-color: transparent;
+}
+
+.om-m-now .title2 {
+  margin-bottom: 75px;
+}
+.search-form.om-m-now .inner-wrapper {
+  padding: 50px 40px 40px;
+  border-width: 10px; 
+}
+.search-form.om-m-now .inner-wrapper .form-group {
+  margin-bottom: 20px;
+}
+.search-form.om-m-now .text-center {
+  width: 100%;
+  float: left;
+}
+.search-form.om-m-now .inner-wrapper .text-center .c-btn {
+  line-height: 42px;
+  font-size: 17px;
+  min-width: 230px;
+  margin-top: 20px;
+}
+.online-side-nav .nav-btn.r-design {
+    top: 70px;
+}
+
+.send-msg-btn {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  font-size: 16px;
+  top: 0;
+  padding: 8px 14px;
+  line-height: 32px;
+  color: #fff;
+  background: #9f9f9f;
+  cursor: pointer;
+  z-index: 1
+}
+
+/**** Chat Popup Layout******/
+
+.msg_box{
+ /*position:fixed;*/
+ bottom: 0;
+ width:250px;
+ background:#fff;
+ border-radius:5px 5px 0px 0px;
+ -webkit-box-shadow: 0 0 10px 0 rgba(000,000,000,0.1);
+ box-shadow: 0 0 10px 0 rgba(000,000,000,0.1);
+ z-index: 999;
+}
+
+.msg_head{ 
+ color:#fff;
+ padding:8px 10px;
+ font-weight:400;
+ cursor:pointer;
+ border-radius:5px 5px 0px 0px;
+}
+
+.msg_body{
+ background:#fff;
+ height:320px;
+ font-size:12px;
+ padding:15px 8px 60px;
+ overflow:auto;
+ overflow-x: hidden;
+ border: 1px solid #dddddd
+}
+.msg_input{
+ width:100%;
+ height: 55px;
+ border: 1px solid #fff;
+ border-top:1px solid #DDDDDD;
+ -webkit-box-sizing: border-box; 
+ -moz-box-sizing: border-box;   
+ box-sizing: border-box;  
+}
+
+.close {
+ float:right;
+ cursor:pointer;
+ padding: 2px 0;
+}
+
+.minimize {
+ float:right;
+ cursor:pointer;
+ padding-right:5px;
+ 
+}
+
+.msg-left {
+ position:relative;
+ background:#e2e2e2;
+ padding:5px;
+ min-height:10px;
+ margin-bottom:5px;
+ margin-right:10px;
+ border-radius:5px;
+ font-size: 16px;
+ word-break: break-all;
+}
+
+.msg-right {
+  background:#d4e7fa;
+  padding:5px;
+  min-height:15px;
+  margin-bottom:5px;
+  position:relative;
+  margin-left:10px;
+  border-radius:5px;
+  word-break: break-all;
+  font-size: 16px;
+}
+.msg_head .img-circle {
+  width: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+/**** Slider Layout Popup *********/
+
+ #chat-sidebar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #b2b2b2;
+  overflow: scroll;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#chat-sidebar::-webkit-scrollbar {
+  visibility: hidden;
+}
+#chat-sidebar:hover::-webkit-scrollbar {
+  visibility: visible;
+}
+ .sidebar-user-box {
+     padding: 5px 12px;
+     margin-bottom: 4px;
+     font-size: 15px;
+     font-weight:bold;
+     cursor:pointer;
+     position: relative;
+}
+.online-side-nav .sidebar-user-box i {
+  position: absolute;
+  left: 13px;
+  bottom: 3px;
+
+}
+.online-side-nav i:before {
+  color: #f05151;
+  font-size: 8px;
+}
+.online-side-nav i.active:before {
+  color: #20c032;
+}
+
+.sidebar-user-box:hover {
+     background-color:#fbc034 ;
+}
+.sidebar-user-box:after {
+     content: ".";
+     display: block;
+     height: 0;
+     clear: both;
+     visibility: hidden;
+}
+.online-side-nav img {
+     width:45px;
+     height:45px;
+     border-radius:50%;
+     float:left;
+}
+ .slider-username{
+     float:left;
+     line-height: 45px;
+     margin-left: 10px;
+     font-size:  13px;
+     font-weight: 500;
+     white-space: nowrap;
+     width: 135px;
+     overflow: hidden;
+     text-overflow: ellipsis;
+}
+span.u_name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 170px;
+    display: inline-block;
+    vertical-align: middle;
+}

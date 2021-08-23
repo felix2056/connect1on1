@@ -1,0 +1,57 @@
+/*
+Template: Cupid Love Dating HTML5 Template
+Author: potenzaglobalsolutions.com
+Version: 1.0  
+Design and Developed by: potenzaglobalsolutions.com
+
+
+NOTE: This is Style customizer stylesheet of template.
+
+*/
+
+
+div.style-customizer { background-color: #fff; color: #1e2327; width: 340px; height:430px; position: fixed; top:180px; z-index: 10000; right: -340px; box-shadow: -3px 0 50px -2px rgba(0, 0, 0, 0.14); bottom: 0; }
+div.style-customizer p {color:#ffffff;}
+.style-customizer.closed { box-shadow: none; }
+div.style-customizer .content-chooser { padding: 30px; height: 100%; position: absolute; background-color: #252525; border-top: none; color:#ffffff;}
+div.style-customizer.opened .content-chooser { opacity: 1; }
+div.style-customizer .title{font-size:24px; margin-top:20px; line-height:24px; font-weight:600; text-transform: uppercase; color:#ffffff;}
+div.style-customizer a.opener { display: block; height: 45px; position: absolute; right: 340px; top: 90px; background: #252525; width: 45px; font-size: 20px; line-height: 45px; color: #ffffff; text-align: center; text-decoration: none; box-shadow: -1px 0 5px -2px rgba(0, 0, 0, 0.14); }
+div.style-customizer.opened a.opener { left: -45px; border-color: transparent; }
+div.style-customizer ul { list-style: none; margin: 0; padding: 5px 0 0 0; font-size: 0; }
+div.style-customizer ul li { width: 38px; height: 38px; float: left; position: relative; display: inline-block; cursor: pointer; margin: 0 10px 8px 0; -webkit-transition: all linear 0.3s; -moz-transition: all linear 0.3s; -o-transition: all linear 0.3s; -ms-transition: all linear 0.3s; transition: all linear 0.3s; }
+div.style-customizer ul li:nth-child(6) { margin-right: 0px; }
+div.style-customizer ul li:nth-child(12) { margin-right: 0px; }
+div.style-customizer ul.layoutstyle li { width: 45%; height: 30px; margin-right: 5px; color: #666666; background-color: #f1f1f1; border: 1px solid #f3f3f3; font-size: 13px; text-align: center; padding-top: 5px; }
+div.style-customizer ul.layoutstyle li i { color: #cccccc; font-size: 11px; }
+div.style-customizer ul.layoutstyle li.selected { border: 1px solid #aaaaaa; }
+div.style-customizer ul.layoutstyle li.selected i { color: #666666; }
+div.style-customizer ul li.selected { border: 3px solid #ffffff; }
+div.style-customizer ul.resetAll{margin-top:10px;}
+div.style-customizer ul.resetAll li { width: 100%; height:auto; padding: 6px 0; min-width: 0; text-align: center; line-height: inherit; }
+div.style-customizer .btn a { text-decoration: none; color: #ffffff; }
+div.style-customizer select { width: 100%; padding: 5px; border: 1px solid #b2bfca; }
+.style-customizer p { margin-bottom: 10px; }
+.style-customizer .button{width:100%; font-size:13px; color:#ffffff; text-align:center; text-transform: uppercase; font-weight:500; margin:0; padding:13px 10px; background:none !important; border:1px solid #ffffff !important;}
+.style-customizer .button:hover{background:#ffffff !important; color:#353535;}
+
+/*Color Skins*/
+div.style-customizer .skin-default{background: #ffbc05;}
+div.style-customizer .skin-tomato{background:#fe7043;}
+div.style-customizer .skin-ruby{background:#e81d62;}
+div.style-customizer .skin-pelorous{background:#329fa9;}
+div.style-customizer .skin-cranberry{background:#E0566D;}
+div.style-customizer .skin-golden-sand{background:#f7d66c;}
+div.style-customizer .skin-deep-cerise{background:#CE2E85;}
+div.style-customizer .skin-la-rioja{background:#B4C408;}
+div.style-customizer .skin-summer-sky{background:#34c1e7;}
+div.style-customizer .skin-amaranth{background:#df3f52;}
+div.style-customizer .skin-light-tomato{background:#f35b50;}
+div.style-customizer .skin-pacific-blue{background:#0296c0;}
+
+
+
+
+@media(max-width:992px) {
+	.style-customizer { display: none !important; }
+}
